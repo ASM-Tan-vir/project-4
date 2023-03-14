@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <link href="/dist/output.css" rel="stylesheet" />
+  <body class="h-screen w-scrin items-center justify-center grid">
+    <div
+      class="clcBody max-w-lg rounded-xl overflow-hidden shadow-2xl bg-gray-800 bg-opacity-40 bg-gradient-to-br from-slate-600 flex"
+    >
+      <form class="p-2">
+        <div class="p-2">
+          <input
+            type="text"
+            name="display"
+            class="p-10 rounded-xl"
+            id="display"
+          />
+        </div>
+        <div class="grid grid-cols-4 gap-4">
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="AC" onclick="cleanObj()" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="(" onclick="calculator('(')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value=")" onclick="calculator(')')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="/" onclick="calculator('/')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="7" onclick="calculator('7')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="8" onclick="calculator('8')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="9" onclick="calculator('9')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="*" onclick="calculator('*')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="4" onclick="calculator('4')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="5" onclick="calculator('5')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="6" onclick="calculator('6')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="-" onclick="calculator('-')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="1" onclick="calculator('1')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="2" onclick="calculator('2')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="3" onclick="calculator('3')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="+" onclick="calculator('+')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="00" onclick="calculator('00')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="0" onclick="calculator('0')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="." onclick="calculator('.')" />
+          </div>
+          <div
+            class="border-none rounded-lg text-white bg-slate-800 text-center text-xl hover:bg-violet-500 p-2 m-1 duration-300"
+          >
+            <input type="button" value="=" onclick="result()" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
